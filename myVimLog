@@ -1,0 +1,527 @@
+
+chdir(/usr/share/vim)
+fchdir() to previous dir
+sourcing "$VIM/vimrc"
+finished sourcing $VIM/vimrc
+chdir(/Users/maggie)
+fchdir() to previous dir
+sourcing "$HOME/.vimrc"
+Searching for "autoload/neobundle.vim" in "/Users/maggie/.vim,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/autoload/neobundle.vim"
+chdir(/Users/maggie/.vim/autoload)
+fchdir() to previous dir
+line 14: sourcing "/Users/maggie/.vim/autoload/neobundle.vim"
+Searching for "autoload/neobundle/util.vim" in "/Users/maggie/.vim,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/autoload/neobundle/util.vim"
+chdir(/Users/maggie/.vim/autoload/neobundle)
+fchdir() to previous dir
+line 43: sourcing "/Users/maggie/.vim/autoload/neobundle/util.vim"
+finished sourcing /Users/maggie/.vim/autoload/neobundle/util.vim
+continuing in /Users/maggie/.vim/autoload/neobundle.vim
+finished sourcing /Users/maggie/.vim/autoload/neobundle.vim
+continuing in /Users/maggie/.vimrc
+Searching for "autoload/neobundle/init.vim" in "/Users/maggie/.vim,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/autoload/neobundle/init.vim"
+chdir(/Users/maggie/.vim/autoload/neobundle)
+fchdir() to previous dir
+line 4: sourcing "/Users/maggie/.vim/autoload/neobundle/init.vim"
+finished sourcing /Users/maggie/.vim/autoload/neobundle/init.vim
+continuing in function neobundle#begin
+Searching for "autoload/neobundle/config.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/autoload/neobundle/config.vim"
+chdir(/Users/maggie/.vim/autoload/neobundle)
+fchdir() to previous dir
+line 21: sourcing "/Users/maggie/.vim/autoload/neobundle/config.vim"
+finished sourcing /Users/maggie/.vim/autoload/neobundle/config.vim
+continuing in function neobundle#begin..neobundle#init#_rc
+Searching for "ftoff.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/ftoff.vim"
+Searching for "/Users/maggie/.vim/bundle/.neobundle/ftoff.vim"
+Searching for "/usr/share/vim/vimfiles/ftoff.vim"
+Searching for "/usr/share/vim/vim73/ftoff.vim"
+chdir(/usr/share/vim/vim73)
+fchdir() to previous dir
+line 1: sourcing "/usr/share/vim/vim73/ftoff.vim"
+Error detected while processing /usr/share/vim/vim73/ftoff.vim:
+line   11:
+E216: No such group or event: filetypedetect *
+finished sourcing /usr/share/vim/vim73/ftoff.vim
+continuing in function neobundle#begin..neobundle#init#_rc..neobundle#config#init
+Searching for "/usr/share/vim/vimfiles/after/ftoff.vim"
+Searching for "/Users/maggie/.vim/after/ftoff.vim"
+Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/ftoff.vim"
+Searching for "autoload/neobundle/autoload.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/autoload/neobundle/autoload.vim"
+chdir(/Users/maggie/.vim/autoload/neobundle)
+fchdir() to previous dir
+line 22: sourcing "/Users/maggie/.vim/autoload/neobundle/autoload.vim"
+finished sourcing /Users/maggie/.vim/autoload/neobundle/autoload.vim
+continuing in function neobundle#begin..neobundle#init#_rc
+Searching for "autoload/neobundle/parser.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/autoload/neobundle/parser.vim"
+chdir(/Users/maggie/.vim/autoload/neobundle)
+fchdir() to previous dir
+line 17: sourcing "/Users/maggie/.vim/autoload/neobundle/parser.vim"
+finished sourcing /Users/maggie/.vim/autoload/neobundle/parser.vim
+continuing in /Users/maggie/.vimrc
+Executing FuncUndefined Auto commands for "*"
+autocommand call neobundle#autoload#function()
+
+Searching for "autoload/neobundle/types/git.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/autoload/neobundle/types/git.vim"
+chdir(/Users/maggie/.vim/autoload/neobundle/types)
+fchdir() to previous dir
+line 5: sourcing "/Users/maggie/.vim/autoload/neobundle/types/git.vim"
+finished sourcing /Users/maggie/.vim/autoload/neobundle/types/git.vim
+continuing in function neobundle#parser#fetch..<SNR>9_parse_arg..neobundle#parser#_init_bundle..neobundle#parser#path..neobundle#config#get_types
+Searching for "colors/Tomorrow-Night-Eighties.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim"
+chdir(/Users/maggie/.vim/colors)
+fchdir() to previous dir
+line 196: sourcing "/Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim"
+Searching for "syntax/syncolor.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/syntax/syncolor.vim"
+Searching for "/Users/maggie/.vim/bundle/.neobundle/syntax/syncolor.vim"
+Searching for "/usr/share/vim/vimfiles/syntax/syncolor.vim"
+Searching for "/usr/share/vim/vim73/syntax/syncolor.vim"
+chdir(/usr/share/vim/vim73/syntax)
+fchdir() to previous dir
+line 23: sourcing "/usr/share/vim/vim73/syntax/syncolor.vim"
+finished sourcing /usr/share/vim/vim73/syntax/syncolor.vim
+continuing in /Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim
+Searching for "/usr/share/vim/vimfiles/after/syntax/syncolor.vim"
+Searching for "/Users/maggie/.vim/after/syntax/syncolor.vim"
+Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/syntax/syncolor.vim"
+finished sourcing /Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim
+continuing in /Users/maggie/.vimrc
+Searching for "autoload/unite/filters/matcher_default.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/autoload/unite/filters/matcher_default.vim"
+Searching for "/Users/maggie/.vim/bundle/.neobundle/autoload/unite/filters/matcher_default.vim"
+Searching for "/usr/share/vim/vimfiles/autoload/unite/filters/matcher_default.vim"
+Searching for "/usr/share/vim/vim73/autoload/unite/filters/matcher_default.vim"
+Searching for "/usr/share/vim/vimfiles/after/autoload/unite/filters/matcher_default.vim"
+Searching for "/Users/maggie/.vim/after/autoload/unite/filters/matcher_default.vim"
+Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/autoload/unite/filters/matcher_default.vim"
+not found in 'runtimepath': "autoload/unite/filters/matcher_default.vim"
+Executing FuncUndefined Auto commands for "*"
+autocommand call neobundle#autoload#function()
+
+Searching for "autoload/unite/filters/matcher_default.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+Searching for "/Users/maggie/.vim/autoload/unite/filters/matcher_default.vim"
+Searching for "/Users/maggie/.vim/bundle/.neobundle/autoload/unite/filters/matcher_default.vim"
+Searching for "/usr/share/vim/vimfiles/autoload/unite/filters/matcher_default.vim"
+Searching for "/usr/share/vim/vim73/autoload/unite/filters/matcher_default.vim"
+Searching for "/usr/share/vim/vimfiles/after/autoload/unite/filters/matcher_default.vim"
+Searching for "/Users/maggie/.vim/after/autoload/unite/filters/matcher_default.vim"
+Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/autoload/unite/filters/matcher_default.vim"
+not found in 'runtimepath': "autoload/unite/filters/matcher_default.vim"
+Error detected while processing /Users/maggie/.vimrc:
+line  237:
+E117: Unknown function: unite#filters#matcher_default#use
+                                                         Searching for "autoload/unite/filters/sorter_default.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                                         Searching for "/Users/maggie/.vim/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/Users/maggie/.vim/bundle/.neobundle/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/usr/share/vim/vimfiles/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/usr/share/vim/vim73/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/usr/share/vim/vimfiles/after/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/Users/maggie/.vim/after/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/autoload/unite/filters/sorter_default.vim"
+                                                         not found in 'runtimepath': "autoload/unite/filters/sorter_default.vim"
+                                                         Executing FuncUndefined Auto commands for "*"
+                                                         autocommand call neobundle#autoload#function()
+
+                                                         Searching for "autoload/unite/filters/sorter_default.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                                         Searching for "/Users/maggie/.vim/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/Users/maggie/.vim/bundle/.neobundle/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/usr/share/vim/vimfiles/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/usr/share/vim/vim73/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/usr/share/vim/vimfiles/after/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/Users/maggie/.vim/after/autoload/unite/filters/sorter_default.vim"
+                                                         Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/autoload/unite/filters/sorter_default.vim"
+                                                         not found in 'runtimepath': "autoload/unite/filters/sorter_default.vim"
+line  238:
+E117: Unknown function: unite#filters#sorter_default#use
+                                                        Searching for "autoload/unite.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                                        Searching for "/Users/maggie/.vim/autoload/unite.vim"
+                                                        Searching for "/Users/maggie/.vim/bundle/.neobundle/autoload/unite.vim"
+                                                        Searching for "/usr/share/vim/vimfiles/autoload/unite.vim"
+                                                        Searching for "/usr/share/vim/vim73/autoload/unite.vim"
+                                                        Searching for "/usr/share/vim/vimfiles/after/autoload/unite.vim"
+                                                        Searching for "/Users/maggie/.vim/after/autoload/unite.vim"
+                                                        Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/autoload/unite.vim"
+                                                        not found in 'runtimepath': "autoload/unite.vim"
+                                                        Executing FuncUndefined Auto commands for "*"
+                                                        autocommand call neobundle#autoload#function()
+
+                                                        Searching for "autoload/unite.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                                        Searching for "/Users/maggie/.vim/autoload/unite.vim"
+                                                        Searching for "/Users/maggie/.vim/bundle/.neobundle/autoload/unite.vim"
+                                                        Searching for "/usr/share/vim/vimfiles/autoload/unite.vim"
+                                                        Searching for "/usr/share/vim/vim73/autoload/unite.vim"
+                                                        Searching for "/usr/share/vim/vimfiles/after/autoload/unite.vim"
+                                                        Searching for "/Users/maggie/.vim/after/autoload/unite.vim"
+                                                        Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/autoload/unite.vim"
+                                                        not found in 'runtimepath': "autoload/unite.vim"
+line  239:
+E117: Unknown function: unite#set_profile
+                                         Searching for "autoload/unite/custom.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                         Searching for "/Users/maggie/.vim/autoload/unite/custom.vim"
+                                         Searching for "/Users/maggie/.vim/bundle/.neobundle/autoload/unite/custom.vim"
+                                         Searching for "/usr/share/vim/vimfiles/autoload/unite/custom.vim"
+                                         Searching for "/usr/share/vim/vim73/autoload/unite/custom.vim"
+                                         Searching for "/usr/share/vim/vimfiles/after/autoload/unite/custom.vim"
+                                         Searching for "/Users/maggie/.vim/after/autoload/unite/custom.vim"
+                                         Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/autoload/unite/custom.vim"
+                                         not found in 'runtimepath': "autoload/unite/custom.vim"
+                                         Executing FuncUndefined Auto commands for "*"
+                                         autocommand call neobundle#autoload#function()
+
+                                         Searching for "autoload/unite/custom.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                         Searching for "/Users/maggie/.vim/autoload/unite/custom.vim"
+                                         Searching for "/Users/maggie/.vim/bundle/.neobundle/autoload/unite/custom.vim"
+                                         Searching for "/usr/share/vim/vimfiles/autoload/unite/custom.vim"
+                                         Searching for "/usr/share/vim/vim73/autoload/unite/custom.vim"
+                                         Searching for "/usr/share/vim/vimfiles/after/autoload/unite/custom.vim"
+                                         Searching for "/Users/maggie/.vim/after/autoload/unite/custom.vim"
+                                         Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/autoload/unite/custom.vim"
+                                         not found in 'runtimepath': "autoload/unite/custom.vim"
+line  240:
+E117: Unknown function: unite#custom#source
+                                           Executing FuncUndefined Auto commands for "*"
+                                           autocommand call neobundle#autoload#function()
+
+                                           Searching for "autoload/unite/custom.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/autoload/unite/custom.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/autoload/unite/custom.vim"
+                                           Searching for "/usr/share/vim/vimfiles/autoload/unite/custom.vim"
+                                           Searching for "/usr/share/vim/vim73/autoload/unite/custom.vim"
+                                           Searching for "/usr/share/vim/vimfiles/after/autoload/unite/custom.vim"
+                                           Searching for "/Users/maggie/.vim/after/autoload/unite/custom.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/autoload/unite/custom.vim"
+                                           not found in 'runtimepath': "autoload/unite/custom.vim"
+line  245:
+E117: Unknown function: unite#custom#source
+                                           Searching for "filetype.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/filetype.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/filetype.vim"
+                                           Searching for "/usr/share/vim/vimfiles/filetype.vim"
+                                           Searching for "/usr/share/vim/vim73/filetype.vim"
+                                           chdir(/usr/share/vim/vim73)
+                                           fchdir() to previous dir
+                                           line 305: sourcing "/usr/share/vim/vim73/filetype.vim"
+                                           Searching for "ftdetect/*.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/ftdetect/*.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/ftdetect/*.vim"
+                                           chdir(/Users/maggie/.vim/bundle/.neobundle/ftdetect)
+                                           fchdir() to previous dir
+                                           line 2476: sourcing "/Users/maggie/.vim/bundle/.neobundle/ftdetect/jade.vim"
+                                           finished sourcing /Users/maggie/.vim/bundle/.neobundle/ftdetect/jade.vim
+                                           continuing in /usr/share/vim/vim73/filetype.vim
+                                           chdir(/Users/maggie/.vim/bundle/.neobundle/ftdetect)
+                                           fchdir() to previous dir
+                                           line 2476: sourcing "/Users/maggie/.vim/bundle/.neobundle/ftdetect/less.vim"
+                                           finished sourcing /Users/maggie/.vim/bundle/.neobundle/ftdetect/less.vim
+                                           continuing in /usr/share/vim/vim73/filetype.vim
+                                           chdir(/Users/maggie/.vim/bundle/.neobundle/ftdetect)
+                                           fchdir() to previous dir
+                                           line 2476: sourcing "/Users/maggie/.vim/bundle/.neobundle/ftdetect/mustache.vim"
+                                           finished sourcing /Users/maggie/.vim/bundle/.neobundle/ftdetect/mustache.vim
+                                           continuing in /usr/share/vim/vim73/filetype.vim
+                                           chdir(/Users/maggie/.vim/bundle/.neobundle/ftdetect)
+                                           fchdir() to previous dir
+                                           line 2476: sourcing "/Users/maggie/.vim/bundle/.neobundle/ftdetect/scss.vim"
+                                           finished sourcing /Users/maggie/.vim/bundle/.neobundle/ftdetect/scss.vim
+                                           continuing in /usr/share/vim/vim73/filetype.vim
+                                           chdir(/Users/maggie/.vim/bundle/.neobundle/ftdetect)
+                                           fchdir() to previous dir
+                                           line 2476: sourcing "/Users/maggie/.vim/bundle/.neobundle/ftdetect/stylus.vim"
+                                           finished sourcing /Users/maggie/.vim/bundle/.neobundle/ftdetect/stylus.vim
+                                           continuing in /usr/share/vim/vim73/filetype.vim
+                                           Searching for "/usr/share/vim/vimfiles/ftdetect/*.vim"
+                                           Searching for "/usr/share/vim/vim73/ftdetect/*.vim"
+                                           Searching for "/usr/share/vim/vimfiles/after/ftdetect/*.vim"
+                                           Searching for "/Users/maggie/.vim/after/ftdetect/*.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/ftdetect/*.vim"
+                                           finished sourcing /usr/share/vim/vim73/filetype.vim
+                                           continuing in /Users/maggie/.vimrc
+                                           Searching for "/usr/share/vim/vimfiles/after/filetype.vim"
+                                           Searching for "/Users/maggie/.vim/after/filetype.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/filetype.vim"
+                                           Searching for "ftplugin.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/ftplugin.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/ftplugin.vim"
+                                           Searching for "/usr/share/vim/vimfiles/ftplugin.vim"
+                                           Searching for "/usr/share/vim/vim73/ftplugin.vim"
+                                           chdir(/usr/share/vim/vim73)
+                                           fchdir() to previous dir
+                                           line 305: sourcing "/usr/share/vim/vim73/ftplugin.vim"
+                                           finished sourcing /usr/share/vim/vim73/ftplugin.vim
+                                           continuing in /Users/maggie/.vimrc
+                                           Searching for "/usr/share/vim/vimfiles/after/ftplugin.vim"
+                                           Searching for "/Users/maggie/.vim/after/ftplugin.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/ftplugin.vim"
+                                           Searching for "indent.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/indent.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/indent.vim"
+                                           Searching for "/usr/share/vim/vimfiles/indent.vim"
+                                           Searching for "/usr/share/vim/vim73/indent.vim"
+                                           chdir(/usr/share/vim/vim73)
+                                           fchdir() to previous dir
+                                           line 305: sourcing "/usr/share/vim/vim73/indent.vim"
+                                           finished sourcing /usr/share/vim/vim73/indent.vim
+                                           continuing in /Users/maggie/.vimrc
+                                           Searching for "/usr/share/vim/vimfiles/after/indent.vim"
+                                           Searching for "/Users/maggie/.vim/after/indent.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/indent.vim"
+                                           chdir(/usr/share/vim/vim73/syntax)
+                                           fchdir() to previous dir
+                                           line 308: sourcing "/usr/share/vim/vim73/syntax/syntax.vim"
+                                           Searching for "syntax/synload.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/syntax/synload.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/syntax/synload.vim"
+                                           Searching for "/usr/share/vim/vimfiles/syntax/synload.vim"
+                                           Searching for "/usr/share/vim/vim73/syntax/synload.vim"
+                                           chdir(/usr/share/vim/vim73/syntax)
+                                           fchdir() to previous dir
+                                           line 19: sourcing "/usr/share/vim/vim73/syntax/synload.vim"
+                                           Searching for "colors/Tomorrow-Night-Eighties.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim"
+                                           chdir(/Users/maggie/.vim/colors)
+                                           fchdir() to previous dir
+                                           line 19: sourcing "/Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim"
+                                           Searching for "syntax/syncolor.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/syntax/syncolor.vim"
+                                           Searching for "/usr/share/vim/vimfiles/syntax/syncolor.vim"
+                                           Searching for "/usr/share/vim/vim73/syntax/syncolor.vim"
+                                           chdir(/usr/share/vim/vim73/syntax)
+                                           fchdir() to previous dir
+                                           line 22: sourcing "/usr/share/vim/vim73/syntax/syncolor.vim"
+                                           finished sourcing /usr/share/vim/vim73/syntax/syncolor.vim
+                                           continuing in /Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim
+                                           Searching for "/usr/share/vim/vimfiles/after/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/.vim/after/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/syntax/syncolor.vim"
+                                           Searching for "syntax/syncolor.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/syntax/syncolor.vim"
+                                           Searching for "/usr/share/vim/vimfiles/syntax/syncolor.vim"
+                                           Searching for "/usr/share/vim/vim73/syntax/syncolor.vim"
+                                           chdir(/usr/share/vim/vim73/syntax)
+                                           fchdir() to previous dir
+                                           line 23: sourcing "/usr/share/vim/vim73/syntax/syncolor.vim"
+                                           finished sourcing /usr/share/vim/vim73/syntax/syncolor.vim
+                                           continuing in /Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim
+                                           Searching for "/usr/share/vim/vimfiles/after/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/.vim/after/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/syntax/syncolor.vim"
+                                           finished sourcing /Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim
+                                           continuing in /usr/share/vim/vim73/syntax/synload.vim
+                                           finished sourcing /usr/share/vim/vim73/syntax/synload.vim
+                                           continuing in /usr/share/vim/vim73/syntax/syntax.vim
+                                           finished sourcing /usr/share/vim/vim73/syntax/syntax.vim
+                                           continuing in /Users/maggie/.vimrc
+                                           chdir(/usr/share/vim/vim73/syntax)
+                                           fchdir() to previous dir
+                                           line 348: sourcing "/usr/share/vim/vim73/syntax/syntax.vim"
+                                           chdir(/usr/share/vim/vim73/syntax)
+                                           fchdir() to previous dir
+                                           line 15: sourcing "/usr/share/vim/vim73/syntax/nosyntax.vim"
+                                           finished sourcing /usr/share/vim/vim73/syntax/nosyntax.vim
+                                           continuing in /usr/share/vim/vim73/syntax/syntax.vim
+                                           Searching for "syntax/synload.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/syntax/synload.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/syntax/synload.vim"
+                                           Searching for "/usr/share/vim/vimfiles/syntax/synload.vim"
+                                           Searching for "/usr/share/vim/vim73/syntax/synload.vim"
+                                           chdir(/usr/share/vim/vim73/syntax)
+                                           fchdir() to previous dir
+                                           line 19: sourcing "/usr/share/vim/vim73/syntax/synload.vim"
+                                           Searching for "colors/Tomorrow-Night-Eighties.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim"
+                                           chdir(/Users/maggie/.vim/colors)
+                                           fchdir() to previous dir
+                                           line 19: sourcing "/Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim"
+                                           Searching for "syntax/syncolor.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/syntax/syncolor.vim"
+                                           Searching for "/usr/share/vim/vimfiles/syntax/syncolor.vim"
+                                           Searching for "/usr/share/vim/vim73/syntax/syncolor.vim"
+                                           chdir(/usr/share/vim/vim73/syntax)
+                                           fchdir() to previous dir
+                                           line 22: sourcing "/usr/share/vim/vim73/syntax/syncolor.vim"
+                                           finished sourcing /usr/share/vim/vim73/syntax/syncolor.vim
+                                           continuing in /Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim
+                                           Searching for "/usr/share/vim/vimfiles/after/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/.vim/after/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/syntax/syncolor.vim"
+                                           Searching for "syntax/syncolor.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/syntax/syncolor.vim"
+                                           Searching for "/usr/share/vim/vimfiles/syntax/syncolor.vim"
+                                           Searching for "/usr/share/vim/vim73/syntax/syncolor.vim"
+                                           chdir(/usr/share/vim/vim73/syntax)
+                                           fchdir() to previous dir
+                                           line 23: sourcing "/usr/share/vim/vim73/syntax/syncolor.vim"
+                                           finished sourcing /usr/share/vim/vim73/syntax/syncolor.vim
+                                           continuing in /Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim
+                                           Searching for "/usr/share/vim/vimfiles/after/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/.vim/after/syntax/syncolor.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/syntax/syncolor.vim"
+                                           finished sourcing /Users/maggie/.vim/colors/Tomorrow-Night-Eighties.vim
+                                           continuing in /usr/share/vim/vim73/syntax/synload.vim
+                                           Executing ColorScheme Auto commands for "*"
+                                           autocommand :hi IndentGuidesOdd   ctermbg=238
+
+                                           autocommand :hi IndentGuidesEven ctermbg=237
+
+                                           finished sourcing /usr/share/vim/vim73/syntax/synload.vim
+                                           continuing in /usr/share/vim/vim73/syntax/syntax.vim
+                                           finished sourcing /usr/share/vim/vim73/syntax/syntax.vim
+                                           continuing in /Users/maggie/.vimrc
+                                           Searching for "filetype.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/filetype.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/filetype.vim"
+                                           Searching for "/usr/share/vim/vimfiles/filetype.vim"
+                                           Searching for "/usr/share/vim/vim73/filetype.vim"
+                                           chdir(/usr/share/vim/vim73)
+                                           fchdir() to previous dir
+                                           line 460: sourcing "/usr/share/vim/vim73/filetype.vim"
+                                           finished sourcing /usr/share/vim/vim73/filetype.vim
+                                           continuing in /Users/maggie/.vimrc
+                                           Searching for "/usr/share/vim/vimfiles/after/filetype.vim"
+                                           Searching for "/Users/maggie/.vim/after/filetype.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/filetype.vim"
+                                           Searching for "filetype.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/filetype.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/filetype.vim"
+                                           Searching for "/usr/share/vim/vimfiles/filetype.vim"
+                                           Searching for "/usr/share/vim/vim73/filetype.vim"
+                                           chdir(/usr/share/vim/vim73)
+                                           fchdir() to previous dir
+                                           line 920: sourcing "/usr/share/vim/vim73/filetype.vim"
+                                           finished sourcing /usr/share/vim/vim73/filetype.vim
+                                           continuing in /Users/maggie/.vimrc
+                                           Searching for "/usr/share/vim/vimfiles/after/filetype.vim"
+                                           Searching for "/Users/maggie/.vim/after/filetype.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/filetype.vim"
+                                           Searching for "ftplugin.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/ftplugin.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/ftplugin.vim"
+                                           Searching for "/usr/share/vim/vimfiles/ftplugin.vim"
+                                           Searching for "/usr/share/vim/vim73/ftplugin.vim"
+                                           chdir(/usr/share/vim/vim73)
+                                           fchdir() to previous dir
+                                           line 920: sourcing "/usr/share/vim/vim73/ftplugin.vim"
+                                           finished sourcing /usr/share/vim/vim73/ftplugin.vim
+                                           continuing in /Users/maggie/.vimrc
+                                           Searching for "/usr/share/vim/vimfiles/after/ftplugin.vim"
+                                           Searching for "/Users/maggie/.vim/after/ftplugin.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/ftplugin.vim"
+                                           Searching for "indent.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/indent.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/indent.vim"
+                                           Searching for "/usr/share/vim/vimfiles/indent.vim"
+                                           Searching for "/usr/share/vim/vim73/indent.vim"
+                                           chdir(/usr/share/vim/vim73)
+                                           fchdir() to previous dir
+                                           line 920: sourcing "/usr/share/vim/vim73/indent.vim"
+                                           finished sourcing /usr/share/vim/vim73/indent.vim
+                                           continuing in /Users/maggie/.vimrc
+                                           Searching for "/usr/share/vim/vimfiles/after/indent.vim"
+                                           Searching for "/Users/maggie/.vim/after/indent.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/indent.vim"
+                                           Searching for "autoload/neobundle/commands.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/autoload/neobundle/commands.vim"
+                                           chdir(/Users/maggie/.vim/autoload/neobundle)
+                                           fchdir() to previous dir
+                                           line 924: sourcing "/Users/maggie/.vim/autoload/neobundle/commands.vim"
+                                           finished sourcing /Users/maggie/.vim/autoload/neobundle/commands.vim
+                                           continuing in /Users/maggie/.vimrc
+                                           Executing FuncUndefined Auto commands for "*"
+                                           autocommand call neobundle#autoload#function()
+
+                                           Searching for "autoload/neobundle/installer.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/autoload/neobundle/installer.vim"
+                                           chdir(/Users/maggie/.vim/autoload/neobundle)
+                                           fchdir() to previous dir
+                                           line 1: sourcing "/Users/maggie/.vim/autoload/neobundle/installer.vim"
+                                           finished sourcing /Users/maggie/.vim/autoload/neobundle/installer.vim
+                                           continuing in function neobundle#commands#check
+                                           finished sourcing $HOME/.vimrc
+                                           Searching for "plugin/**/*.vim" in "/Users/maggie/.vim,/Users/maggie/.vim/bundle/.neobundle,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,/Users/maggie/.vim/after,/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/"
+                                           Searching for "/Users/maggie/.vim/plugin/**/*.vim"
+                                           Searching for "/Users/maggie/.vim/bundle/.neobundle/plugin/**/*.vim"
+                                           Searching for "/usr/share/vim/vimfiles/plugin/**/*.vim"
+                                           Searching for "/usr/share/vim/vim73/plugin/**/*.vim"
+                                           chdir(/usr/share/vim/vim73/plugin)
+                                           fchdir() to previous dir
+                                           sourcing "/usr/share/vim/vim73/plugin/getscriptPlugin.vim"
+                                           finished sourcing /usr/share/vim/vim73/plugin/getscriptPlugin.vim
+                                           chdir(/usr/share/vim/vim73/plugin)
+                                           fchdir() to previous dir
+                                           sourcing "/usr/share/vim/vim73/plugin/gzip.vim"
+                                           finished sourcing /usr/share/vim/vim73/plugin/gzip.vim
+                                           chdir(/usr/share/vim/vim73/plugin)
+                                           fchdir() to previous dir
+                                           sourcing "/usr/share/vim/vim73/plugin/matchparen.vim"
+                                           finished sourcing /usr/share/vim/vim73/plugin/matchparen.vim
+                                           chdir(/usr/share/vim/vim73/plugin)
+                                           fchdir() to previous dir
+                                           sourcing "/usr/share/vim/vim73/plugin/netrwPlugin.vim"
+                                           finished sourcing /usr/share/vim/vim73/plugin/netrwPlugin.vim
+                                           chdir(/usr/share/vim/vim73/plugin)
+                                           fchdir() to previous dir
+                                           sourcing "/usr/share/vim/vim73/plugin/rrhelper.vim"
+                                           finished sourcing /usr/share/vim/vim73/plugin/rrhelper.vim
+                                           chdir(/usr/share/vim/vim73/plugin)
+                                           fchdir() to previous dir
+                                           sourcing "/usr/share/vim/vim73/plugin/spellfile.vim"
+                                           finished sourcing /usr/share/vim/vim73/plugin/spellfile.vim
+                                           chdir(/usr/share/vim/vim73/plugin)
+                                           fchdir() to previous dir
+                                           sourcing "/usr/share/vim/vim73/plugin/tarPlugin.vim"
+                                           finished sourcing /usr/share/vim/vim73/plugin/tarPlugin.vim
+                                           chdir(/usr/share/vim/vim73/plugin)
+                                           fchdir() to previous dir
+                                           sourcing "/usr/share/vim/vim73/plugin/tohtml.vim"
+                                           finished sourcing /usr/share/vim/vim73/plugin/tohtml.vim
+                                           chdir(/usr/share/vim/vim73/plugin)
+                                           fchdir() to previous dir
+                                           sourcing "/usr/share/vim/vim73/plugin/vimballPlugin.vim"
+                                           finished sourcing /usr/share/vim/vim73/plugin/vimballPlugin.vim
+                                           chdir(/usr/share/vim/vim73/plugin)
+                                           fchdir() to previous dir
+                                           sourcing "/usr/share/vim/vim73/plugin/zipPlugin.vim"
+                                           finished sourcing /usr/share/vim/vim73/plugin/zipPlugin.vim
+                                           Searching for "/usr/share/vim/vimfiles/after/plugin/**/*.vim"
+                                           Searching for "/Users/maggie/.vim/after/plugin/**/*.vim"
+                                           Searching for "/Users/maggie/VimplifY/files/.vim/bundle/neobundle.vim/plugin/**/*.vim"
+                                           Reading viminfo file "/Users/maggie/.viminfo" info oldfiles
+Executing BufWinEnter Auto commands for "*"
+autocommand call neobundle#autoload#explorer( expand('<afile>'), 'BufWinEnter')
+
+Executing BufEnter Auto commands for "*"
+autocommand call neobundle#autoload#explorer( expand('<afile>'), 'BufEnter')
+
+Executing BufEnter Auto commands for "*"
+autocommand silent! call s:LocalBrowse(expand("<amatch>"))
+
+Executing VimEnter Auto commands for "*"
+autocommand call s:on_vim_enter()
+
+Executing VimEnter Auto commands for "*"
+autocommand :hi IndentGuidesOdd   ctermbg=238
+
+autocommand :hi IndentGuidesEven ctermbg=237
+
+Executing VimEnter Auto commands for "*"
+autocommand silent! call s:VimEnter(expand("<amatch>"))
+
+Executing CursorMoved Auto commands for "*"
+autocommand call s:Highlight_Matching_Pair()
+
+
+E492: Not an editor command: Unite
+
+Writing viminfo file "/Users/maggie/.viminfo"

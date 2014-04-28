@@ -11,7 +11,7 @@ if has('vim_starting')
 endif
 
 "Neobundle Setup
-call neobundle#begin(expand('~/.vim/bundle/'))
+call neobundle#rc(expand('~/.vim/bundle/'))
 
 "Let NeoBundle manage self
 NeoBundleFetch 'Shougo/neobundle.vim'
