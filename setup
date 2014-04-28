@@ -55,10 +55,10 @@ mkdir -p ~/.vim/bundle
 curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
 cp -rf ~/.vim/bundle/neobundle.vim/autoload/* ~/.vim/autoload/
 
-git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim
+#git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim
 
-cp ~/.vim/bundle/vimproc.vim/autoload/vimproc.vim ~/.vim/autoload/
-cp -rf ~/.vim/bundle/vimproc.vim/autoload/vimproc  ~/.vim/autoload/
+#cp ~/.vim/bundle/vimproc.vim/autoload/vimproc.vim ~/.vim/autoload/
+#cp -rf ~/.vim/bundle/vimproc.vim/autoload/vimproc  ~/.vim/autoload/
 
 
 #echo '>> Setting up neobundle'

@@ -10,6 +10,8 @@ if has('vim_starting')
    set runtimepath+=~/VimplifY/files/.vim/bundle/neobundle.vim/
 endif
 
+command! Reload :so ~/.vimrc
+
 "Neobundle Setup
 call neobundle#rc(expand('~/.vim/bundle/'))
 
