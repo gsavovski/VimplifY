@@ -206,7 +206,6 @@ NeoBundleLazy 'osyo-manga/unite-airline_themes', {'autoload':{'unite_sources':'a
 "Unite outline no-split no-quit
 
 "*************************************************** Unite mappings
-
 let g:unite_split_rule = "botright"
 nnoremap <leader>z :Unite  -buffer-name=files   -start-insert buffer file_rec/async:!<cr>
 " nnoremap <leader>/ :Unite grep:.<cr>
@@ -234,10 +233,13 @@ nmap <buffer> <C-i> <Plug>(unite_toggle_auto_preview)
 " nnoremap <C-p> :Unite -no-split -start-insert -auto-preview -winheight=5 file_rec/async<cr>
 
 "*************************************************** Unite settings
-" call unite#filters#matcher_default#use(['matcher_fuzzy'])
-" call unite#filters#sorter_default#use(['sorter_rank'])
-" call unite#set_profile('files', 'smartcase', 1)
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
+call unite#set_profile('files', 'smartcase', 1)
 " call unite#custom#source('line,outline','matchers','matcher_fuzzy')
+let g:unite_source_file_rec_max_cache_files = 0
+call unite#custom#source('file_mru,file_rec,file_rec/async,grepocate',
+            \ 'max_candidates', 0)
 
 " call unite#custom#source('file_rec/async',
 "             \ 'ignore_pattern', join(['\.git\/', 'tmp\/',
@@ -250,7 +252,6 @@ let g:unite_enable_start_insert=1
 let g:unite_source_history_yank_enable=1
 let g:unite_source_rec_max_cache_files=35000
 let g:unite_prompt='» '
-call unite#filters#sorter_default#use(['sorter_rank'])
 
 " let g:unite_source_grep_command='ag'
 " let g:unite_source_grep_default_opts='--nocolor --nogroup -S -C4'
