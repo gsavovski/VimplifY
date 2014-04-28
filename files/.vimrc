@@ -251,15 +251,16 @@ let g:unite_source_history_yank_enable=1
 " let g:unite_source_rec_max_cache_files=35000
 let g:unite_prompt='» '
 
-let g:unite_source_grep_command='ag'
+" let g:unite_source_grep_command='ag'
 let g:unite_source_grep_default_opts='--nocolor --nogroup -S -C4'
 let g:unite_source_grep_recursive_opt=''
 let g:unite_split_rule = "botright"
 
-" let g:unite_source_grep_default_opts = '--no-heading --no-color -a'
-" let g:unite_enable_start_insert = 1
-" let g:unite_force_overwrite_statusline = 0
-" let g:unite_winheight = 10
+let g:unite_source_grep_command='grep'
+let g:unite_source_grep_default_opts = '--no-heading --no-color -a'
+let g:unite_enable_start_insert = 1
+let g:unite_force_overwrite_statusline = 0
+let g:unite_winheight = 10
 
 " let g:unite_ignore_source_files = ['*.log', '*.svg', '*.ttf', '*.git', '*.png' ]
 " call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
