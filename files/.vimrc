@@ -252,8 +252,8 @@ let g:unite_source_history_yank_enable=1
 let g:unite_prompt='» '
 
 " let g:unite_source_grep_command='ag'
-let g:unite_source_grep_default_opts='--nocolor --nogroup -S -C4'
-let g:unite_source_grep_recursive_opt=''
+" let g:unite_source_grep_default_opts='--nocolor --nogroup -S -C4'
+" let g:unite_source_grep_recursive_opt=''
 let g:unite_split_rule = "botright"
 
 let g:unite_source_grep_command='grep'
