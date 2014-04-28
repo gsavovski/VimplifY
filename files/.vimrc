@@ -2,16 +2,29 @@
 
 "*************************************************** PLUGIN MANAGER
 "*************************************************** Neobundle
+"Reload vimrc
+"command! Reload :so ~/.vimrc
 
 if has('vim_starting')
    set nocompatible               " Be iMproved
-   set runtimepath+=~/dotify/files/.vim/bundle/neobundle.vim/
+   set runtimepath+=~/VimplifY/files/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+"Neobundle Setup
+call neobundle#begin(expand('~/.vim/bundle/'))
 
-" dotify/setup runs direct git clone before the installation starts
+"Let NeoBundle manage self
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
 
 "*************************************************** PLUGINS
 "***************************************************
@@ -114,14 +127,6 @@ NeoBundle 'scrooloose/syntastic' "{{{
   let g:syntastic_enable_balloons = 1
 "}}}
 
-NeoBundle 'Shougo/vimproc', {
-      \ 'build' : {
-      \     'windows' : 'make -f make_mingw32.mak',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-      \ }
 
 
 "*************************************************** UNITE
@@ -478,10 +483,10 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 "***************************************************** Fugitive
 "status line
 :set ls=2
-:set statusline=%F%m%r%h%w\
-:set statusline+=%{fugitive#statusline()}\
-:set statusline+=[%{strlen(&fenc)?&fenc:&enc}]
-:set statusline+=\ [line\ %l\/%L\/%c]
+":set statusline=%F%m%r%h%w\
+":set statusline+=%{fugitive#statusline()}\
+":set statusline+=[%{strlen(&fenc)?&fenc:&enc}]
+":set statusline+=\ [line\ %l\/%L\/%c]
 " :set statusline+=\[%{getcwd()}]\
 
 "***************************************************** Copy/Paste System
@@ -573,17 +578,17 @@ NeoBundle 'tpope/vim-repeat'
 
 "****************************************************** Commenting
 
-NeoBundle 'tpope/vim-commentary'
-nmap <Leader>c <Plug>CommentaryLine
-xmap <Leader>c <Plug>Commentary
-
-augroup plugin_commentary
-    au!
-    au FileType python setlocal commentstring=#%s
-    au FileType htmldjango setlocal commentstring={#\ %s\ #}
-    au FileType puppet setlocal commentstring=#\ %s
-    au FileType xquery setlocal commentstring=(:\ %s\ :)
-augroup END
+"NeoBundle 'tpope/vim-commentary'
+"nmap <Leader>c <Plug>CommentaryLine
+"xmap <Leader>c <Plug>Commentary
+"
+"augroup plugin_commentary
+"    au!
+"    au FileType python setlocal commentstring=#%s
+"    au FileType htmldjango setlocal commentstring={#\ %s\ #}
+"    au FileType puppet setlocal commentstring=#\ %s
+"    au FileType xquery setlocal commentstring=(:\ %s\ :)
+"augroup END
 
 
 "****************************************************** Random plugins
@@ -903,10 +908,18 @@ endfunction
 
 NeoBundle 'tpope/vim-bundler'
 
-"************************************ Check if any new plugins (KEEP LAST)
-NeoBundleCheck
 
 
 
 " allow quit via single keypress (Q)
 map XX :qa<CR>
+
+
+"************************************ Check if any new plugins (KEEP LAST)
+" Required: NeoBundle  END
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------

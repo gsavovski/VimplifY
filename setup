@@ -4,12 +4,23 @@
 #  One click setup for developent environment
 #
 
+
 echo "**** Setting up Goran's Development Environment"
 
+echo "**** Detecting Operating System"
+#Detect OSTYPE
+#if [[ "$OSTYPE" == "linux-gnu" ]]; then
+#        # ...
+#elif [[ "$OSTYPE" == "darwin"* ]]; then
+#        # ...
+#else
+#        # Unknown.
+#fi
 # Detect .vimrc path.
 VIMRC=$HOME/.vimrc
 NOW=$(date +"%m_%d_%Y")
 THIS_PATH=$(pwd)
+
 
 # VIM
 #.vimrc
@@ -32,20 +43,38 @@ if [ -d ~/.vim ]; then
   mv  ~/.vim ~/.vim.BAK_$NOW
 fi
 
-echo '> Symlinking .vim direstory to dotify'
-ln -s $THIS_PATH/files/.vim  ~/.vim
+#echo '> Symlinking .vim direstory to dotify'
+#ln -s $THIS_PATH/files/.vim  ~/.vim
 
-echo '>> Setting up neobundle'
-if ! [ -d ~/dotify/files/.vim/bundle/neobundle.vim ]; then
-echo ''
-  echo 'Cloninnnnnnng'
-  git clone git://github.com/Shougo/neobundle.vim $THIS_PATH/files/.vim/bundle/neobundle.vim
-else
-  echo '> Neobundle already installed'
-  echo '> Updating plugin'
-  cd ~/dotify/files/.vim/bundle/neobundle.vim
-  git pull
-fi
+#echo '> Creating ~/.vim directory'
+mkdir ~/.vim
+
+#First setup neobundle
+mkdir -p ~/.vim/autoload
+mkdir -p ~/.vim/bundle
+curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
+cp -rf ~/.vim/bundle/neobundle.vim/autoload/* ~/.vim/autoload/
+
+git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim
+
+cp ~/.vim/bundle/vimproc.vim/autoload/vimproc.vim ~/.vim/autoload/
+cp -rf ~/.vim/bundle/vimproc.vim/autoload/vimproc  ~/.vim/autoload/
+
+
+#echo '>> Setting up neobundle'
+#if ! [ -d ~/VimplifY/files/.vim/bundle/neobundle.vim ]; then
+#echo ''
+#  echo 'Cloninnnnnnng'
+#  mkdir -p ~/VimplifY/files/.vim/bundle
+#  git clone git://github.com/Shougo/neobundle.vim $THIS_PATH/files/.vim/bundle/neobundle.vim
+#else
+#  echo '> Neobundle already installed'
+#  echo '> Updating plugin'
+#  cd ~/dotify/files/.vim/bundle/neobundle.vim
+#  git pull
+#fi
+
+
 
 ##Silver searcher
 #if ! [ `which ag` ]; then
@@ -53,6 +82,7 @@ fi
 #  #TODO asks for password, make it skip
 #  git clone https://github.com/ggreer/the_silver_searcher /tmp/ag && cd /tmp/ag && ./build.sh && sudo make install
 #fi
+
 
 #Silver searcher
 
@@ -63,10 +93,10 @@ fi
 #  sudo apt-get install xclip   
 #fi
 
-echo '>> ALL VIM Plugins install using NeoBundle'
+#echo '>> ALL VIM Plugins install using NeoBundle'
 vim -N -u $VIMRC -c "try | NeoBundleInstall | NeoBundleUpdate | finally | qall! | endtry" \
     -U NONE -i NONE -V1 -e -s
-
+cp -r ~/.vim/bundle/vim-tomorrow-theme/colors ~/.vim/
 
 #$NODEJS_OK=$(dpkg-query -W --showformat='${Status}\n' nodejs | grep "install ok installed")
 #if [ "" == "$XCLIP_OK" ]; then
