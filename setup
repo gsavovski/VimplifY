@@ -94,7 +94,7 @@ cp -rf ~/.vim/bundle/vimproc.vim/autoload/vimproc  ~/.vim/autoload/
 #fi
 
 #echo '>> ALL VIM Plugins install using NeoBundle'
-vim -N -u $VIMRC -c "try | NeoBundleInstall | NeoBundleUpdate | finally | qall! | endtry" \
+vi -N -u $VIMRC -c "try | NeoBundleInstall | NeoBundleUpdate | finally | qall! | endtry" \
     -U NONE -i NONE -V1 -e -s
 cp -r ~/.vim/bundle/vim-tomorrow-theme/colors ~/.vim/
 
