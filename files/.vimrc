@@ -234,33 +234,35 @@ nmap <buffer> <C-i> <Plug>(unite_toggle_auto_preview)
 " nnoremap <C-p> :Unite -no-split -start-insert -auto-preview -winheight=5 file_rec/async<cr>
 
 "*************************************************** Unite settings
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
-call unite#set_profile('files', 'smartcase', 1)
-call unite#custom#source('line,outline','matchers','matcher_fuzzy')
+" call unite#filters#matcher_default#use(['matcher_fuzzy'])
+" call unite#filters#sorter_default#use(['sorter_rank'])
+" call unite#set_profile('files', 'smartcase', 1)
+" call unite#custom#source('line,outline','matchers','matcher_fuzzy')
 
-call unite#custom#source('file_rec/async',
-            \ 'ignore_pattern', join(['\.git\/', 'tmp\/',
-            \ 'app\/assets\/images\/', 'app\/assets\/fonts\/', '\/spec\/cassettes\/', 'public\/' ], '\|')
-            \ )
-let g:unite_data_directory='~/.vim/.cache/unite'
-let g:unite_source_find_max_candidates=1000
-
+" call unite#custom#source('file_rec/async',
+"             \ 'ignore_pattern', join(['\.git\/', 'tmp\/',
+"             \ 'app\/assets\/images\/', 'app\/assets\/fonts\/', '\/spec\/cassettes\/', 'public\/' ], '\|')
+"             \ )
+" let g:unite_data_directory='~/.vim/.cache/unite'
+" let g:unite_source_find_max_candidates=1000
+"
 let g:unite_enable_start_insert=1
 let g:unite_source_history_yank_enable=1
-" let g:unite_source_rec_max_cache_files=35000
+let g:unite_source_rec_max_cache_files=35000
 let g:unite_prompt='» '
+call unite#filters#sorter_default#use(['sorter_rank'])
 
 " let g:unite_source_grep_command='ag'
 " let g:unite_source_grep_default_opts='--nocolor --nogroup -S -C4'
 " let g:unite_source_grep_recursive_opt=''
-let g:unite_split_rule = "botright"
 
 let g:unite_source_grep_command='grep'
 let g:unite_source_grep_default_opts = '--no-heading --no-color -a'
+let g:unite_source_grep_recursive_opt='-r'
 let g:unite_enable_start_insert = 1
 let g:unite_force_overwrite_statusline = 0
 let g:unite_winheight = 10
+let g:unite_split_rule = "botright"
 
 " let g:unite_ignore_source_files = ['*.log', '*.svg', '*.ttf', '*.git', '*.png' ]
 " call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
@@ -271,28 +273,26 @@ let g:unite_winheight = 10
 " call unite#filters#matcher_default#use(['matcher_fuzzy'])
 " let g:unite_source_grep_command='grep'
 " " let g:unite_source_grep_default_opts='--nocolor --nogroup -S -C4'
-" let g:unite_source_grep_recursive_opt='-r'
 
-" call unite#filters#sorter_default#use(['sorter_rank'])
 
-function! s:unite_settings()
-  let b:SuperTabDisabled=1
-  " imap <buffer> <C-j>   <Plug>(unite_select_next_line)
-  " imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
-  imap <silent><buffer><expr> <C-x> unite#do_action('split')
-  imap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
-  imap <silent><buffer><expr> <C-t> unite#do_action('tabopen')
-  nmap <buffer> Q <plug>(unite_exit)
-  nmap <buffer> <esc> <plug>(unite_exit)
-  imap <buffer> <esc> <plug>(unite_exit)
-  " nnoremap <silent><buffer><expr> p
-  "       \ empty(filter(range(1, winnr('$')),
-  "       \ 'getwinvar(v:val, "&previewwindow") != 0')) ?
-  "       \ unite#do_action('preview') : ":\<C-u>pclose!\<CR>"
-  "   nmap <buffer> <ESC> <Plug>(unite_exit)
-endfunction
-
-autocmd FileType unite call s:unite_settings()
+" function! s:unite_settings()
+"   let b:SuperTabDisabled=1
+"   " imap <buffer> <C-j>   <Plug>(unite_select_next_line)
+"   " imap <buffer> <C-k>   <Plug>(unite_select_previous_line)
+"   imap <silent><buffer><expr> <C-x> unite#do_action('split')
+"   imap <silent><buffer><expr> <C-v> unite#do_action('vsplit')
+"   imap <silent><buffer><expr> <C-t> unite#do_action('tabopen')
+"   nmap <buffer> Q <plug>(unite_exit)
+"   nmap <buffer> <esc> <plug>(unite_exit)
+"   imap <buffer> <esc> <plug>(unite_exit)
+"   " nnoremap <silent><buffer><expr> p
+"   "       \ empty(filter(range(1, winnr('$')),
+"   "       \ 'getwinvar(v:val, "&previewwindow") != 0')) ?
+"   "       \ unite#do_action('preview') : ":\<C-u>pclose!\<CR>"
+"   "   nmap <buffer> <ESC> <Plug>(unite_exit)
+" endfunction
+"
+" autocmd FileType unite call s:unite_settings()
 
 "*************************************************** Arline settings
   " let g:airline#extensions#tabline#enabled = 1
