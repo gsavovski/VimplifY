@@ -1,0 +1,100 @@
+#! /bin/bash
+################################################
+#
+#  One click setup for developent environment
+#
+
+echo "**** Setting up Goran's Development Environment"
+
+# Detect .vimrc path.
+VIMRC=$HOME/.vimrc
+NOW=$(date +"%m_%d_%Y")
+THIS_PATH=$(pwd)
+
+# VIM
+#.vimrc
+echo '>> Setting up VIM'
+#Check if .vimrc is already a symbolic link
+#Don't backup .vimrc otherwise
+if ! [ -L ~/.vimrc ]; then
+  _file="/nas/backup_$NOW"
+  echo '> Backing $_file...'
+  mv ~/.vimrc ~/.vimrc.BAK_$NOW
+fi
+
+rm ~/.vimrc
+echo '> Symlinking .vimrc to dotify'
+ln -s $THIS_PATH/files/.vimrc  ~/.vimrc
+
+#.vim
+if [ -d ~/.vim ]; then
+  echo '> Backing up ~/.vim'
+  mv  ~/.vim ~/.vim.BAK_$NOW
+fi
+
+echo '> Symlinking .vim direstory to dotify'
+ln -s $THIS_PATH/files/.vim  ~/.vim
+
+echo '>> Setting up neobundle'
+if ! [ -d ~/dotify/files/.vim/bundle/neobundle.vim ]; then
+echo ''
+  echo 'Cloninnnnnnng'
+  git clone git://github.com/Shougo/neobundle.vim $THIS_PATH/files/.vim/bundle/neobundle.vim
+else
+  echo '> Neobundle already installed'
+  echo '> Updating plugin'
+  cd ~/dotify/files/.vim/bundle/neobundle.vim
+  git pull
+fi
+
+##Silver searcher
+#if ! [ `which ag` ]; then
+#  echo '> Installing silver searcher'
+#  #TODO asks for password, make it skip
+#  git clone https://github.com/ggreer/the_silver_searcher /tmp/ag && cd /tmp/ag && ./build.sh && sudo make install
+#fi
+
+#Silver searcher
+
+#$XCLIP_OK=$(dpkg-query -W --showformat='${Status}\n' xclip | grep "install ok installed")
+#if [ "" == "$XCLIP_OK" ]; then
+## type foo >/dev/null 2>&1 || { echo >&2 "I require foo but it's not installed.  Aborting."; exit 1; }
+#  echo '> Installing xclip'
+#  sudo apt-get install xclip   
+#fi
+
+echo '>> ALL VIM Plugins install using NeoBundle'
+vim -N -u $VIMRC -c "try | NeoBundleInstall | NeoBundleUpdate | finally | qall! | endtry" \
+    -U NONE -i NONE -V1 -e -s
+
+
+#$NODEJS_OK=$(dpkg-query -W --showformat='${Status}\n' nodejs | grep "install ok installed")
+#if [ "" == "$XCLIP_OK" ]; then
+#  echo '> Installing nodejs'
+#  sudo apt-get install nodejsc
+#  echo 'symlinking /usr/bin/nodejs to /usr/bin/node, Fix for jshint.vim plugin'
+#  sudo ln -s /usr/bin/nodejs /usr/bin/node
+#fi
+
+
+# #.bashrc
+# echo '>> Setting up .bashrc'
+# if ! [ -L ~/.bashrc ]; then
+#   echo '> Backing up ~/.vimrc'
+#   mv ~/.bashrc ~/.bashrc.BAK
+# fi
+# 
+# rm ~/.bashrc
+# echo '> Symlinking .bashrc to dotify'
+# ln -s ~/dotify/files/.bashrc  ~/.bashrc
+# 
+# #.bashrc
+# echo '>> Setting up .bash_aliases'
+# if ! [ -L ~/.bash_aliases ]; then
+#   echo '> Backing up ~/.vimrc'
+#   mv ~/.bash_aliases ~/.bash_aliases.BAK
+# fi
+# 
+# rm ~/.bash_aliases
+# echo '> Symlinking .vimrc to dotify'
+# ln -s ~/dotify/files/.bash_aliases  ~/.bash_aliases

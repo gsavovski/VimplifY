@@ -1,0 +1,36 @@
+#Incorporate in setup if user wants full Vim Experince
+
+./configure --prefix=/usr/local/  \
+            --enable-rubyinterp   \
+            --enable-pythoninterp \
+            --enable-luainterp    \
+            --with-lua-prefix=/usr/local \
+            --with-features=huge \
+            --disable-netbeans \
+            --disable-arabic \
+            --disable-farsi \
+            --disable-gui \
+            --without-x \
+            --disable-nls \
+            --disable-gpm \
+            --disable-emacs_tags \
+            --disable-keymap \
+            --disable-langmap \
+            --enable-feature=browse \
+            --with-tlib=ncurses \
+            --enable-multibyte \
+            --enable-mzschemeinterp \
+            --enable-python3interp \
+            --enable-tclinterp    \
+            --enable-cscope  \
+            --enable-sniff \
+            --enable-multibyte \
+            --enable-xim  \
+            --enable-fontset \
+            --enable-mouse_sysmouse \
+            --enable-mouseshape \
+            --enable-sniff \
+            --enable-xterm_clipboard \
+            --enable-xterm_save \
+
+
