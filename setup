@@ -94,11 +94,10 @@ cp -rf ~/.vim/bundle/neobundle.vim/autoload/* ~/.vim/autoload/
 #fi
 
 #echo '>> ALL VIM Plugins install using NeoBundle'
-vi -N -u $VIMRC -c "try | NeoBundleFetch 'Shougu/vimproc'"
+vi -N -u $VIMRC -c "try | NeoBundleFetch 'Shougu/vimproc' | endtry"
 
 #vi -N -u $VIMRC -c "try | NeoBundleInstall | NeoBundleUpdate | finally | qall! | endtry" \
 #    -U NONE -i NONE -V1 -e -s
-#cp -r ~/.vim/bundle/vim-tomorrow-theme/colors ~/.vim/
 
 #$NODEJS_OK=$(dpkg-query -W --showformat='${Status}\n' nodejs | grep "install ok installed")
 #if [ "" == "$XCLIP_OK" ]; then
