@@ -11,7 +11,7 @@ endif
 
 "Neobundle Setup
 call neobundle#rc(expand('~/.vim/bundle/'))
-let g:neobundle#install_max_processes = 6
+let g:neobundle#install_max_processes = 16
 
 "Let NeoBundle manage itself
 NeoBundleFetch 'Shougo/neobundle.vim'
