@@ -8,7 +8,7 @@
 echo "**** Setting up Goran's Development Environment"
 
 echo "**** Detecting Operating System"
-#Detect OSTYPE
+#Detect OSTYPE, not needed at the moment
 #if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #        # ...
 #elif [[ "$OSTYPE" == "darwin"* ]]; then
@@ -16,11 +16,11 @@ echo "**** Detecting Operating System"
 #else
 #        # Unknown.
 #fi
+
 # Detect .vimrc path.
 VIMRC=$HOME/.vimrc
-NOW=$(date +"%m_%d_%Y")
+NOW=$(date +"%Y_%m_%d")
 THIS_PATH=$(pwd)
-
 
 # VIM
 #.vimrc
@@ -55,37 +55,20 @@ mkdir -p ~/.vim/bundle
 curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
 cp -rf ~/.vim/bundle/neobundle.vim/autoload/* ~/.vim/autoload/
 
-#git clone https://github.com/Shougo/vimproc.vim.git ~/.vim/bundle/vimproc.vim
+#echo '>> ALL VIM Plugins install using NeoBundle'
+vi -N -u $VIMRC -c "try | NeoBundleFetch 'Shougu/vimproc' | endtry"
 
-#cp ~/.vim/bundle/vimproc.vim/autoload/vimproc.vim ~/.vim/autoload/
-#cp -rf ~/.vim/bundle/vimproc.vim/autoload/vimproc  ~/.vim/autoload/
+#vi -N -u $VIMRC -c "try | NeoBundleInstall | NeoBundleUpdate | finally | qall! | endtry" \
+#    -U NONE -i NONE -V1 -e -s
 
-
-#echo '>> Setting up neobundle'
-#if ! [ -d ~/VimplifY/files/.vim/bundle/neobundle.vim ]; then
-#echo ''
-#  echo 'Cloninnnnnnng'
-#  mkdir -p ~/VimplifY/files/.vim/bundle
-#  git clone git://github.com/Shougo/neobundle.vim $THIS_PATH/files/.vim/bundle/neobundle.vim
-#else
-#  echo '> Neobundle already installed'
-#  echo '> Updating plugin'
-#  cd ~/dotify/files/.vim/bundle/neobundle.vim
-#  git pull
-#fi
-
-
-
-##Silver searcher
+##Silver searcher, Need to guard here OS X vs Ubuntu
 #if ! [ `which ag` ]; then
 #  echo '> Installing silver searcher'
 #  #TODO asks for password, make it skip
 #  git clone https://github.com/ggreer/the_silver_searcher /tmp/ag && cd /tmp/ag && ./build.sh && sudo make install
 #fi
 
-
-#Silver searcher
-
+#Xclip or pbcopy, Need to guard here OS X vs Ubuntu
 #$XCLIP_OK=$(dpkg-query -W --showformat='${Status}\n' xclip | grep "install ok installed")
 #if [ "" == "$XCLIP_OK" ]; then
 ## type foo >/dev/null 2>&1 || { echo >&2 "I require foo but it's not installed.  Aborting."; exit 1; }
@@ -93,12 +76,7 @@ cp -rf ~/.vim/bundle/neobundle.vim/autoload/* ~/.vim/autoload/
 #  sudo apt-get install xclip   
 #fi
 
-#echo '>> ALL VIM Plugins install using NeoBundle'
-vi -N -u $VIMRC -c "try | NeoBundleFetch 'Shougu/vimproc' | endtry"
-
-#vi -N -u $VIMRC -c "try | NeoBundleInstall | NeoBundleUpdate | finally | qall! | endtry" \
-#    -U NONE -i NONE -V1 -e -s
-
+#NodeJS needed for syntactic plugin
 #$NODEJS_OK=$(dpkg-query -W --showformat='${Status}\n' nodejs | grep "install ok installed")
 #if [ "" == "$XCLIP_OK" ]; then
 #  echo '> Installing nodejs'
@@ -108,24 +86,5 @@ vi -N -u $VIMRC -c "try | NeoBundleFetch 'Shougu/vimproc' | endtry"
 #fi
 
 
-# #.bashrc
-# echo '>> Setting up .bashrc'
-# if ! [ -L ~/.bashrc ]; then
-#   echo '> Backing up ~/.vimrc'
-#   mv ~/.bashrc ~/.bashrc.BAK
-# fi
-# 
-# rm ~/.bashrc
-# echo '> Symlinking .bashrc to dotify'
-# ln -s ~/dotify/files/.bashrc  ~/.bashrc
-# 
-# #.bashrc
-# echo '>> Setting up .bash_aliases'
-# if ! [ -L ~/.bash_aliases ]; then
-#   echo '> Backing up ~/.vimrc'
-#   mv ~/.bash_aliases ~/.bash_aliases.BAK
-# fi
-# 
-# rm ~/.bash_aliases
-# echo '> Symlinking .vimrc to dotify'
-# ln -s ~/dotify/files/.bash_aliases  ~/.bash_aliases
+#END OF SCRIPT
+
