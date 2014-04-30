@@ -14,7 +14,7 @@ echo "**** Detecting Operating System"
 #elif [[ "$OSTYPE" == "darwin"* ]]; then
 #        # ...
 #else
-#        # Unknown.
+#        # Must be windows vista
 #fi
 
 # Detect .vimrc path.
@@ -55,9 +55,7 @@ mkdir -p ~/.vim/bundle
 curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
 cp -rf ~/.vim/bundle/neobundle.vim/autoload/* ~/.vim/autoload/
 
-#echo '>> ALL VIM Plugins install using NeoBundle'
-vi -N -u $VIMRC -c "try | NeoBundleFetch 'Shougu/vimproc' | endtry"
-
+#Install all bundles
 #vi -N -u $VIMRC -c "try | NeoBundleInstall | NeoBundleUpdate | finally | qall! | endtry" \
 #    -U NONE -i NONE -V1 -e -s
 

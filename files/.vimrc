@@ -208,24 +208,21 @@ NeoBundleLazy 'osyo-manga/unite-airline_themes', {'autoload':{'unite_sources':'a
 "Unite outline no-split no-quit
 
 "*************************************************** Unite mappings
-let g:unite_split_rule = "botright"
+"
+" Unite Wonderland
+
 nnoremap <leader>z :Unite  -buffer-name=files   -start-insert buffer file_rec/async:!<cr>
-" nnoremap <leader>/ :Unite grep:.<cr>
 nnoremap <silent><leader>/ :<C-u>Unite -no-quit -keep-focus grep<CR>
 "
-"
-"
-"
-"MY MOST USED COMMAND COMBINATION, wonder wich mapping would be healthiest
+"MY MOST USED COMMAND COMBINATION, pinkyL, brother
 nnoremap <leader>l :Unite -here file_rec/async<cr>
 
 
-
+" Auto preview, for some reason can not get it to start on the bottom
 " let g:unite_winheight = 20
 " let g:unite_winheight=10
 set previewheight=30
 nnoremap <leader>f :<C-u>Unite -start-insert -auto-preview -winheight=10 -no-split file_rec/async:!<CR>
-" nnoremap <leader>f :Unite -no-split -start-insert -auto-preview -winheight=10 file_rec/async<cr>
 nnoremap <space>s :Unite -quick-match buffer<cr>
 nmap <buffer> <C-i> <Plug>(unite_toggle_auto_preview)
 
@@ -234,7 +231,9 @@ nmap <buffer> <C-i> <Plug>(unite_toggle_auto_preview)
 " nnoremap <C-p> :Unite -vertical -auto-preview -no-quit -keep-focus -winheight=5 file_rec/async<cr>
 " nnoremap <C-p> :Unite -no-split -start-insert -auto-preview -winheight=5 file_rec/async<cr>
 
+
 "*************************************************** Unite settings
+let g:unite_split_rule = "botright"
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 call unite#set_profile('files', 'smartcase', 1)
@@ -243,18 +242,19 @@ let g:unite_source_file_rec_max_cache_files = 0
 call unite#custom#source('file_mru,file_rec,file_rec/async,grepocate',
             \ 'max_candidates', 0)
 
-" call unite#custom#source('file_rec/async',
-"             \ 'ignore_pattern', join(['\.git\/', 'tmp\/',
-"             \ 'app\/assets\/images\/', 'app\/assets\/fonts\/', '\/spec\/cassettes\/', 'public\/' ], '\|')
-"             \ )
-" let g:unite_data_directory='~/.vim/.cache/unite'
-" let g:unite_source_find_max_candidates=1000
+call unite#custom#source('file_rec/async',
+            \ 'ignore_pattern', join(['\.git\/', 'tmp\/',
+            \ 'app\/assets\/images\/', 'app\/assets\/fonts\/', '\/spec\/cassettes\/', 'public\/' ], '\|')
+            \ )
+let g:unite_data_directory='~/.vim/.cache/unite'
+let g:unite_source_find_max_candidates=1000
 "
 let g:unite_enable_start_insert=1
 let g:unite_source_history_yank_enable=1
 let g:unite_source_rec_max_cache_files=35000
 let g:unite_prompt='» '
 
+" Guard here ag vs. ack vs. grep, prioritize in that order
 " let g:unite_source_grep_command='ag'
 " let g:unite_source_grep_default_opts='--nocolor --nogroup -S -C4'
 " let g:unite_source_grep_recursive_opt=''
@@ -277,6 +277,7 @@ let g:unite_split_rule = "botright"
 " let g:unite_source_grep_command='grep'
 " " let g:unite_source_grep_default_opts='--nocolor --nogroup -S -C4'
 
+" Make unite behave like CtrlP/CommandT
 
 " function! s:unite_settings()
 "   let b:SuperTabDisabled=1
@@ -297,10 +298,10 @@ let g:unite_split_rule = "botright"
 "
 " autocmd FileType unite call s:unite_settings()
 
-"*************************************************** Arline settings
-  " let g:airline#extensions#tabline#enabled = 1
-  " let g:airline#extensions#tabline#left_sep=' '
-  " let g:airline#extensions#tabline#left_alt_sep='¦'
+"*************************************************** Airline settings {{{
+  let g:airline#extensions#tabline#enabled = 1
+  let g:airline#extensions#tabline#left_sep=' '
+  let g:airline#extensions#tabline#left_alt_sep='¦'
 "}}}
 
 "*************************************************** Tabs stuff
@@ -308,6 +309,7 @@ let g:unite_split_rule = "botright"
 set softtabstop=2
 filetype plugin indent on
 " gurad this on older versions of vim
+" not sure what I needed for, but pretty sure fixed something
 " set regexpengine=1
 syntax on
 
@@ -321,9 +323,7 @@ syntax on
 " indent guides
 NeoBundle 'nathanaelkane/vim-indent-guides' "{{{
 let g:indent_guides_auto_colors = 0
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
-:" let g:indent_guides_auto_colors = 0
+
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=238
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
 set ts=4 sw=4 et
@@ -332,6 +332,7 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_enable_on_vim_startup = 1
 set list lcs=tab:\|\
 let g:indentLine_color_term = 239
+
 "}}}
 
 "*************************************************** Settings unsorted!
@@ -355,6 +356,7 @@ syntax on             " Enable syntax highlighting
 "*************************************************** Keyboard Mappings
 
 nnoremap <leader>w :w!<cr>
+"hmm to map or not to map
 "nnoremap <leader>tn :tabnew<cr>
 "nnoremap <leader>tc :tabclose<cr>
 "nnoremap <leader>te :tabedit
@@ -373,10 +375,6 @@ vnoremap L $
 vnoremap < <gv
 vnoremap > >gv
 
-" "navigating tabs left and right
-" nmap <C-h> gT
-" nmap <C-l> gt
-
 " remap arrow keys
 nnoremap <up> :bprev<CR>
 nnoremap <down> :bnext<CR>
@@ -387,18 +385,19 @@ nnoremap <left> :tabprev<CR>
 inoremap <C-h> <left>
 inoremap <C-l> <right>
 
-
 "change cursor position in insert mode
 inoremap <C-h> <left>
 inoremap <C-l> <right>
 inoremap <C-u> <C-g>u<C-u>
 
 "better regex
-nnoremap / /\v
-vnoremap / /\v
-nnoremap ? ?\v
-vnoremap ? ?\v
+" nnoremap / /\v
+" vnoremap / /\v
+" nnoremap ? ?\v
+" vnoremap ? ?\v
+
 " Bellow slowest mapping ever, keep to remember
+" and show everybody never to do
 " nnoremap :s/ :s/\v
 
 "screen line scroll
@@ -485,8 +484,7 @@ autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 "***************************************************** Fugitive
-"status line
-:set ls=2
+"status line :set ls=2
 ":set statusline=%F%m%r%h%w\
 ":set statusline+=%{fugitive#statusline()}\
 ":set statusline+=[%{strlen(&fenc)?&fenc:&enc}]
@@ -649,6 +647,7 @@ nmap <silent> <leader>tw :set invwrap<CR>:set wrap?<CR>
 
 
 "****************************************************** Move selected text
+"Cool but f-ing up other stuff, forget what
 "with holding Ctrl + hjkl
 " nnoremap <c-j> :m .+1<CR>==
 " nnoremap <c-k> :m .-2<CR>==
