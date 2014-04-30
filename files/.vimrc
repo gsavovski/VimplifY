@@ -2,7 +2,6 @@
 
 "*************************************************** PLUGIN MANAGER
 "*************************************************** Neobundle
-
 if has('vim_starting')
    set nocompatible               " Be iMproved
    set runtimepath+=~/VimplifY/files/.vim/bundle/neobundle.vim/
@@ -16,27 +15,6 @@ let g:neobundle#install_max_processes = 16
 "Let NeoBundle manage itself
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-"let neobundle_readme=expand($HOME.'/.vim/bundle/neobundle.vim/README.md')
-" Auto installing NeoBundle
-" let haveNeoBundle =0
-" if (haveNeoBundle==0)
-"   echo "Installing NeoBundle.."
-"   echo ""
-"   let haveVimProc=0
-" endif
-
-"NeoBundleFetch 'Shougo/vimproc' 
-
-" Auto installing NeoBundle
-"let haveVimProc=0
-"
-"if (haveVimProc==0)
-"  echo "Installing NeoBundle.."
-"  echo ""
-"  NeoBundleInstall! 'Shougo/vimproc' 
-"  let haveVimProc=0
-"endif
-
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
@@ -46,13 +24,8 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 
-
 "Reload vimrc
 command! Reload :so ~/.vimrc
-
-
-
-
 
 
 "*************************************************** PLUGINS
