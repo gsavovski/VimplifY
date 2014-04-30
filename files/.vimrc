@@ -734,7 +734,13 @@ function! EnsureExists(path) "{{{
   endif
 endfunction "}}}
 
-"****************************************************** Save with control s + Fix any white space
+"****************************************************** Save with Control+s + Fix any white space
+"IMPORTANT
+"On OS X add this to your .bash_profile/.bashrc
+"to bypass default Ctrl+S behavior 
+" bind -r '\C-s'
+" stty -ixon
+
 :nmap <silent> <c-s> :w<CR> :call FixWhitespace()<CR>
 :imap <silent> <c-s> <Esc>:w<CR>a :call FixWhitespace()<CR>
 :imap <silent> <c-s> <Esc><c-s> :call FixWhitespace()<CR>
