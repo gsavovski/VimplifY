@@ -63,8 +63,14 @@ cp -rf ~/.vim/bundle/neobundle.vim/autoload/* ~/.vim/autoload/
 #if ! [ `which ag` ]; then
 #  echo '> Installing silver searcher'
 #  #TODO asks for password, make it skip
-#  git clone https://github.com/ggreer/the_silver_searcher /tmp/ag && cd /tmp/ag && ./build.sh && sudo make install
-#fi
+
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  git clone https://github.com/ggreer/the_silver_searcher /tmp/ag && cd /tmp/ag && ./build.sh && sudo make install
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  brew install the_silver_searcher
+else
+  echo 'Sorry your OS is not supported'
+fi
 
 #Xclip or pbcopy, Need to guard here OS X vs Ubuntu
 #$XCLIP_OK=$(dpkg-query -W --showformat='${Status}\n' xclip | grep "install ok installed")
