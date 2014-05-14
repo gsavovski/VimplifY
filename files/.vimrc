@@ -923,7 +923,8 @@ NeoBundle 'tpope/vim-bundler'
 " allow quit via single keypress (Q)
 map XX :qa<CR>
 
-
+" multip paste (gv select previous selection)
+xnoremap p pgvy
 "************************************ Check if any new plugins (KEEP LAST)
 " Required: NeoBundle  END
 filetype plugin indent on
